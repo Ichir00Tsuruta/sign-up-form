@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Match Making Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="left">
+        <img src="nathan-dumlao-w5hhoYM_JsU-unsplash.jpg" alt="Couple in love">
+        <div>Ready for love?</div>
+        <div>Photo by <a href="https://unsplash.com/@nate_dumlao?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nathan Dumlao</a> on <a href="https://unsplash.com/photos/silhouette-photo-of-couple-standing-on-beach-watching-sunset-w5hhoYM_JsU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></div>
+    </div>
+    <div class="right">
+        <div class="blurb">
+            This is a fake match making service. 
+            Haven't met the <span>one</span> yet? Are you ready to fall in love?
+        </div>
+        <div class="signup">
+            <div class ="blurb2">Sign up now to meet your best MATCH!</div>
+            <form action="">
+                <div class="form-row">
+                    <div class="form-item">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name">
+                    </div>
+                    <div class="form=item">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" id="last_name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-item">
+                        <label for="mail">E-Mail</label>
+                        <input type="email" name="user_email" id="mail" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="mobile">Phone Number</label>
+                        <input type="tel" name="user_mobile" id="mobile" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-item">
+                        <label for="password">Password
+                            <span class="tooltip-box">
+                                <span class="tooltip-icon">?</span>
+                                <span class="tooltip-text">
+                                    Your password should include: <br>
+                                    • At least 8 characters<br>
+                                    • One uppercase letter<br>
+                                    • One number<br>
+                                    • One special character
+                                </span>
+                            </span>
+                        </label>
+                        <input type="password" name="user_password" id="password" required pattern ="(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}">
+                    </div>
+                    <div class="form-item">
+                        <label for="confirmed_password">Confirm Password</label>
+                        <input type="password" name="user_confirmed_password" id="confirmed_password" required>
+                    </div>
+                </div>
+                <div class="submit-row">
+                    <button type="submit">Create Account</button>
+                    <div class="login">
+                        Already have an account? <span><a href="">Log in</a></span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="submit"></div>
+    </div>
+</body>
+</html>
