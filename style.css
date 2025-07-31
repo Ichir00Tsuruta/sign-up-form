@@ -1,0 +1,129 @@
+html, body {
+    height: 100%; 
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    gap: 10px;
+}
+
+.left {
+  flex: 0 0 auto;
+  height: 100%;  
+  position: relative;
+}
+
+.left img {
+  width: min(30vw, 350px);
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.banner1{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.banner2{
+    position:absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 50%; 
+    transform: translateX(-50%);
+    font-size: 10px;
+    text-align: center;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    height: 100%;
+}
+
+.blurb {
+    height: 30%;
+    display: block;
+    font-size: 25px;
+}
+
+.signup {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.tooltip-box {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip-icon {
+    background-color: aqua;
+    border-radius: 50%;
+    padding: 0 6px;
+    font-size: 10px;
+    line-height: 1.4;
+    display: inline-block;
+    text-align: center;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    background-color: pink;
+    color: blue;
+    font-size: 10px;
+    opacity: 0;
+    transition: 0 0.3s;
+    text-align: left;
+    border-radius: 5px;
+    padding: 8px;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 240px;
+    font-size: 8px;
+}
+
+.tooltip-box:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-text::after {
+    content: ""; 
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: pink transparent transparent transparent;
+}
+
+
