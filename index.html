@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fake Match Making Service</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="left">
             <img src="assets/couple.jpg" alt="Couple in love">
-                <div class="banner1">Ready for love?</div>
+                <div class="banner1"><span id="logo">Ready for love?</span></div>
                 <div class="banner2">Photo by <a href="https://unsplash.com/@shrouda?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Shea Rouda</a> on <a href="https://unsplash.com/photos/man-and-woman-holding-hand-while-walking-on-bridge-mRQk1B4OM0k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
           </div>
         </div>
@@ -19,10 +22,10 @@
                 This is a fake match making service.<br>
                 Haven't met the <span>one</span> yet? <br>
                 <br>
-                Are you ready to fall in love?
+                <span class="phrase">Are you ready to fall in love?</span>
             </div>
             <div class="signup">
-                <div class ="blurb2">Sign up now to meet your best MATCH!</div>
+                <div class ="blurb2">Sign up now to meet the one!</div>
                 <div class ="signup-form">
                     <form action="">
                         <div class="form-row">
@@ -38,12 +41,11 @@
                         <div class="form-row">
                             <div class="form-item email">
                                 <label for="mail">E-Mail</label>
-                                <input type="email" name="user_email" id="mail" pattern=".+@example\.com" required>
+                                <input type="email" placeholder="you@example.com" name="user_email" id="mail" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
                             </div>
-                            <div class="form-item">
-                                <label for="mobile">Phone Number <span>(123-456-7890)</span>
-                                </label>
-                                <input type="tel" name="user_mobile" id="mobile" pattern=" [0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                            <div class="form-item mobile">
+                                <label for="mobile">Phone Number</label>
+                                <input type="tel" placeholder="123-456-7890" name="user_mobile" id="mobile" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                             </div>
                         </div>
                         <div class="form-row">
@@ -60,20 +62,25 @@
                                         </span>
                                     </div>
                                 </label>
-                                <input type="password" name="user_password" id="password" required pattern ="(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}">
+                                <input type="password" 
+                                    name="user_password" 
+                                    placeholder="••••••••"
+                                    id="password" 
+                                    required pattern ="(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}">
                             </div>
                             <div class="form-item">
                                 <label for="confirmed_password">Confirm Password</label>
-                                <input type="password" name="user_confirmed_password" id="confirmed_password" required>
+                                <input type="password"   placeholder="••••••••"
+                                name="user_confirmed_password" id="confirmed_password" required>
                             </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="submit">Create Account</button>
                         </div>
                     </form>
                 </div>
-                <div class="submit-row">
-                    <button type="submit">Create Account</button>
-                    <div class="login">
-                        Already have an account? <span><a href="">Log in</a></span>
-                    </div>
+                <div class="login">
+                    Already have an account? <span><a href="">Log in</a></span>
                 </div>
             </div>
         </div>
